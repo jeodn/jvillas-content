@@ -1,3 +1,6 @@
+"""
+Rudimentary text prediction algorithm. 'Learns from' text sources and generates random body of text in that style.
+"""
 from typing import TextIO
 from random import choice
 
