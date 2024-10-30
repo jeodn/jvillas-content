@@ -24,6 +24,10 @@ def make_dictionary(filename: str) -> dict[str, list[str]]:
     for i in range(len(list_of_words)-1):
         k, v = list_of_words[i], list_of_words[i+1]
         sex[k].append(v)
+
+    with open('word_dict_temp.txt', 'w') as g:
+        for i in sex:
+            g.write(f"{i}: {sex[i]}\n")
     
     return sex
 
